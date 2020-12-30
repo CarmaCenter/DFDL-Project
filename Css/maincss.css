@@ -59,6 +59,14 @@ li{
 .navbar-left-side {
     margin-right: 90px;
 }
+@media(max-width:992px){
+    .navbar-left-side {
+        margin-right: 0;
+    }
+}
+.navbar-toggler-icon {
+    margin-left: 56px;
+}
 
 .contactBtn {
     height: 45px;
@@ -86,7 +94,9 @@ li{
     margin-bottom: 10px;
     }
 }
-
+.form-inline{
+    justify-content: center;
+}
 /*end Navbar style */
 
 /* start home style  */
@@ -102,6 +112,7 @@ li{
     -webkit-font-smoothing: antialiased;
     position: relative;
     padding-bottom: 12px;
+    padding: 30px;
 }
 
 .nav-home .line {

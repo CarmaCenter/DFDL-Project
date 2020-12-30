@@ -7,7 +7,7 @@ var active = nav.find('.active');
 var pos = 0;
 var wid = 0;
 
-if(active.length) {
+if (active.length) {
   pos = active.position().left;
   wid = active.width();
   line.css({
@@ -16,10 +16,10 @@ if(active.length) {
   });
 }
 
-nav.find('ul li a').click(function(e) {
+nav.find('ul li a').click(function (e) {
   e.preventDefault();
-  if(!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
-    
+  if (!$(this).parent().hasClass('active') && !nav.hasClass('animate')) {
+
     nav.addClass('animate');
 
     var _this = $(this);
@@ -29,14 +29,14 @@ nav.find('ul li a').click(function(e) {
     var position = _this.parent().position();
     var width = _this.parent().width();
 
-    if(position.left >= pos) {
+    if (position.left >= pos) {
       line.animate({
         width: ((position.left - pos) + width)
-      }, 300, function() {
+      }, 300, function () {
         line.animate({
           width: width,
           left: position.left
-        }, 150, function() {
+        }, 150, function () {
           nav.removeClass('animate');
         });
         _this.parent().addClass('active');
@@ -45,10 +45,10 @@ nav.find('ul li a').click(function(e) {
       line.animate({
         left: position.left,
         width: ((pos - position.left) + wid)
-      }, 300, function() {
+      }, 300, function () {
         line.animate({
           width: width
-        }, 150, function() {
+        }, 150, function () {
           nav.removeClass('animate');
         });
         _this.parent().addClass('active');
@@ -61,15 +61,15 @@ nav.find('ul li a').click(function(e) {
 });
 
 // home content function 
-$(document).ready(function(){
+$(document).ready(function () {
   $('.home-content-one').show();
-$(".btn-list").click(function(){
-  const value = $(this).attr('data-filter');
-  if(value == ''){
-    $('.itemBox').show('1000')
-  }else{
-    $('.itemBox').not('.'+value).hide('1000');
-    $('.itemBox').filter('.'+value).show('1000');
-  }
-})
+  $(".btn-list").click(function () {
+    const value = $(this).attr('data-filter');
+    if (value == '') {
+      $('.itemBox').show('300')
+    } else {
+      $('.itemBox').not('.' + value).hide('300');
+      $('.itemBox').filter('.' + value).show('300');
+    }
+  })
 });
