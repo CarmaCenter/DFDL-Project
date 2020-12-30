@@ -1,4 +1,5 @@
 /*start Genera style */
+
 * {
     box-sizing: border-box;
 }
@@ -6,9 +7,11 @@
 body {
     font-family: 'Cantora One', sans-serif;
 }
-li{
+
+li {
     list-style: none;
 }
+
 /* End general style  */
 
 /*start Navbar style */
@@ -59,11 +62,13 @@ li{
 .navbar-left-side {
     margin-right: 90px;
 }
-@media(max-width:992px){
+
+@media(max-width:992px) {
     .navbar-left-side {
         margin-right: 0;
     }
 }
+
 .navbar-toggler-icon {
     margin-left: 56px;
 }
@@ -88,15 +93,18 @@ li{
     padding-right: 0;
     padding-left: 3.5rem;
 }
-@media(max-width:992px){
-    .navbar-expand-lg .navbar-nav .nav-link{
-    padding-left: 0;
-    margin-bottom: 10px;
+
+@media(max-width:992px) {
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-left: 0;
+        margin-bottom: 10px;
     }
 }
-.form-inline{
+
+.form-inline {
     justify-content: center;
 }
+
 /*end Navbar style */
 
 /* start home style  */
@@ -157,14 +165,17 @@ li{
     letter-spacing: 0.2em;
     font-size: 14px;
 }
-.itemBox{
-display: none;
-padding: 15px;
+
+.itemBox {
+    display: none;
+    padding: 15px;
 }
-.itemBox ul li{
+
+.itemBox ul li {
     margin-bottom: 15px;
     text-transform: capitalize;
 }
+
 /* end home style  */
 
 /* start footer style  */
